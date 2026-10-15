@@ -1,0 +1,12 @@
+# 안전한 사이트
+https://google.com
+https://github.com/login
+https://www.naver.com
+# 브랜드 소유 방어 도메인 (google.com 으로 리다이렉트)
+gooogle.com
+# 의도적으로 만든 가짜 피싱 패턴 (미등록 더미 문자열 - DNS 해석 안 됨을 확인함)
+http://g00gle-login.tk/verify
+https://paypa1-secure-verify.xyz/login
+https://www.paypal.com@secure-check.tk/signin
+https://secure.login.account.verify.g00gle-login.tk/update
+https://kakao-pay-event-2026.xyz

@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "urltriage"
+version = "0.1.0"
+description = "피싱 URL/도메인 위험도 탐지 CLI (방어/탐지 목적)"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "rich>=13.7",
+    "httpx>=0.27",
+    "python-whois>=0.9",
+    "tldextract>=5.1",
+    "beautifulsoup4>=4.12",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0"]
+
+[project.scripts]
+urltriage = "urltriage.cli:main"
+
+[tool.setuptools]
+packages = ["urltriage", "urltriage.checks"]
+
+[tool.setuptools.package-data]
+urltriage = ["data/*.json"]
